@@ -27,7 +27,7 @@ const jsTask = () => gulp.src(path.js).pipe(gulp.dest(path.build.js));
 const imgTask = () => gulp.src(path.img).pipe(gulp.dest(path.build.img));
 const fontsTask = () => gulp.src(path.fonts).pipe(gulp.dest(path.build.fonts));
 
-const assetsTask = () => gulp.parallel(imgTask, fontsTask);
+const assetsTask = gulp.parallel(imgTask, fontsTask);
 
 const scssTask = () =>
   gulp
