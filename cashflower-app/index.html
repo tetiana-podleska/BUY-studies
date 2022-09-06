@@ -9,7 +9,26 @@
   </head>
 
   <body>
-    <h1>Cashflower</h1>
+    <div class="screen">
+      <picture class="screen__bg">
+        <img src="./build/img/cash-flower.png" alt="cash and flower" />
+      </picture>
+      <div class="container screen__content">
+        <nav class="navigation">
+          <h1 class="company-logo">Cashflower</h1>
+          <a href="./sign-in.html" class="navigation__link">Sign In</a>
+        </nav>
+        <div class="half-screen half-screen--right half-screen--vert-centered">
+          <h2 class="title">Log In</h2>
+          <form class="fields">
+            <input type="text" class="field" placeholder="Ваш логін" />
+            <input type="text" class="field" placeholder="Пароль" />
+            <button type="text" class="submit-btn">Увійти</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <script src="./build/js/main.min.js"></script>
   </body>
 </html>
